@@ -11,8 +11,8 @@
     mysqli_set_charset($standby,"utf8");
 
     $conn=mysqli_connect($host,$username,$password);
-    $setdb=mysqli_select_db($dbname);
-    mysqli_set_charset($setdb,"utf8");
+    //$setdb=mysqli_select_db($dbname);
+    //mysqli_set_charset($setdb,"utf8");
 ?>
 <head>
     <meta charset="utf-8" />
@@ -28,5 +28,6 @@
         <button type="submit" name="search" class="search" id="search" onclick="ready(g)">Search</button>
     </from>
     <div id="g" align="center"></div>
+    
 </body>
 </html>
